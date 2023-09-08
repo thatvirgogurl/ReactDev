@@ -1,0 +1,19 @@
+/node_modules
+/dist
+.parcel-cache
+#parcel(why react is fast) "parcel.org"
+-dev build
+-local server
+-HMR-hot module replacement(refreshed atomatically/reload)
+   how?HMR?-parcel use a  file watching algorithms-writen in c++
+-when you run npx parcel index.html it created .parcel-cache  ->caching-faster buildes
+-image optimization
+-minification files also(in productions)
+-Bundling
+-compress
+-consistent hashing
+-code splitting
+-Differentual Bundling-to support diff type od older browsers also
+-error handling
+-parcel provides HTTPs
+-tree shaking algorithm (removed unused code-code that you are not used in your project)

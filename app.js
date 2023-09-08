@@ -11,6 +11,8 @@
     </div>
 </div> */}
 //its look so messy thats why JSX introduce
+import React from "react";
+import ReactDOM from "react-dom/client";
 const parent = React.createElement(
   "div",
   { id: "par" },
