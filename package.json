@@ -1,21 +1,28 @@
 {
   "name": "namstedev_cloneswiggy",
   "version": "1.0.0",
-  "description": "this is reactApp tought by akhshy",
+  "description": "Thia is Namaste React by Ashay saini",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
+    "test": "jest"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thatvirgogurl/ReactDev.git"
+  },
+  "author": "Monalisa",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thatvirgogurl/ReactDev/issues"
+  },
+  "homepage": "https://github.com/thatvirgogurl/ReactDev#readme",
   "devDependencies": {
-    "parcel": "^2.9.3",
+    "parcel": "^2.10.3",
     "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  },
-  "browserslist":[
-        "last 2 chrome version"
-  ]
+  }
 }

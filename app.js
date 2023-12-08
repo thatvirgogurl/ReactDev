@@ -1,30 +1,34 @@
-// const heading = React.createElement("h1", {id:"heading"}, "hello world");
+import React from 'react';
+import ReactDOM  from 'react-dom/client';
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading" },
+//   "namste react course"
+// );
 
-{/* <div id= parnt>
-    <div  id=childer>
-        <h1 id=1st>
-
-        </h1>
-        <h1 id=2nd>
-
-        </h1>
-    </div>
-</div> */}
-//its look so messy thats why JSX introduce
-import React from "react";
-import ReactDOM from "react-dom/client";
-const parent = React.createElement(
-  "div",
-  { id: "par" },
-  [React.createElement("div", { id: "childer1" }, [
-    React.createElement("h1", { id: "1st" }, "helll im 1st syblling"),
-    React.createElement("h1", { id: "2nd" }, "hello im 2nd syblling"),
-  ]),
-  React.createElement("div", { id: "childer2" }, [
-    React.createElement("h1", { id: "1st" }, "helll im 1st syblling"),
-    React.createElement("h1", { id: "2nd" }, "hello im 2nd syblling"),
-  ])]
+//jsx=babel transpies iit to react.createElemnts=>end of the data its an object=>when it render i conevrt htmlelemnt
+const ele=<h1>elemnt</h1>
+const jsxheading = (
+  <>
+    {ele}
+    <h1 id="heading">namste react course</h1>
+    <h1 id="heading">namste react course</h1>
+  </>
 );
-const root = ReactDOM.createRoot(document.getElementById("root"));
-//root.render(heading);
-root.render(parent)
+const NUM=1000
+const TitleCopm=()=><h1>CHildheading</h1>
+    const HeadingComponent = () =>{
+      return (
+        <div>
+          {TitleCopm()}
+          <TitleCopm />
+          <TitleCopm></TitleCopm>
+          {jsxheading}
+          <h1>hello!</h1>
+          <h2> {NUM}</h2>
+        </div>
+      );
+
+    }
+const root=ReactDOM.createRoot(document.getElementById("root"))
+root.render(<HeadingComponent />);
