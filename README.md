@@ -16,3 +16,13 @@
 -https
 -tree shaing algo-remove unused code
 -difffrent dev and prod bundles
+
+////restro modify data
+ {
+   /* {data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants.map(
+        (x) => {
+          console.log(x.info.cuisines);
+          console.log(x.info.name);
+        }
+      )} */
+ }
