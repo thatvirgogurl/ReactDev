@@ -79,6 +79,30 @@ box-shadow: 2px 2px 2px 2px #e4e4e4;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: rgb(82, 24, 2);
+    background-color:#E27817;
     color: aliceblue;
+ }
+ .filetr{
+    margin-left: 50px;
+ }
+ /* shimmer cards */
+ .shimmer-conainner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ .shimmer-cards{
+    width: 200px;
+    background-color:#f0f0f0;
+    height: 300px;
+    margin: 20px;
+    
+ }
+ .loginButton{
+    padding: 10px 30px;
+    cursor: pointer;
+    margin: 15px;
+    background:#E27817;
+    color: white;
+    border-radius: 5px;
  }

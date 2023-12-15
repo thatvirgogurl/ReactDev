@@ -13,7 +13,7 @@ const RestaurantCard = (props) => {
         alt="noimg"
         src={`${CON_URL+cloudinaryImageId}`}
       ></img>
-      {console.log(cuisines)}
+     
       <div className="menuContaniner">
         <h3>{name}</h3>
         <h4>{cuisines.join(" , ")}</h4>

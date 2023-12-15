@@ -1,0 +1,49 @@
+const Shimmer=()=>{
+    return (
+      <div className="shimmer-conainner">
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+        <div className="shimmer-cards"></div>
+      </div>
+    );
+}
+export default Shimmer;
