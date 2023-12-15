@@ -61,3 +61,24 @@ box-shadow: 2px 2px 2px 2px #e4e4e4;
     margin: 0px;
     margin:7px 7px;
 }
+/* //footer */
+.fotter{
+    background-color: black;
+}
+.fotter > *{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    
+}
+/* /serch button
+ */
+ .filetr-btn{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(82, 24, 2);
+    color: aliceblue;
+ }
