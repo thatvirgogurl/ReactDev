@@ -2,9 +2,10 @@ import RestaurantCard from './RestaurantCard'
 // import data from "../utils/resData";
 import { useEffect, useState } from 'react';
 import Shimmer from './Shimmer';
-//  const restaurantList =
-//    data.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
-
+import {Link} from 'react-router-dom'
+// useState use only inside componnet //it is use for creating local state variavle inside componnet
+//useState use in top of the componnet for better practice
+//never crate useState inside any conditional statement//this can create inconsistancy in your program
 const Body = () => {
 //when state variable updated,react triggers a reconcillation cycle (re-resnders the componnets)
 //when yoou type in searchbar for each and every letter react rerender component
@@ -86,7 +87,9 @@ return listOfRestaurants.length === 0 ? (
     </div>
     <div className="res-container">
       {filetredRestro.map((data) => (
-        <RestaurantCard key={data.info.id} resData={data} />
+        <Link to={"./restaurants/" + data.info.id} key={data.info.id}>
+          <RestaurantCard resData={data} />
+        </Link>
       ))}
     </div>
   </div>
