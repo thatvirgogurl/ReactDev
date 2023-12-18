@@ -109,3 +109,7 @@ box-shadow: 2px 2px 2px 2px #e4e4e4;
 *{
     text-decoration: none;
 }
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+}
