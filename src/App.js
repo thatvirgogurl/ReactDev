@@ -9,6 +9,9 @@ import ContactUs from './components/ContactUs.js';
 import Error from './components/Error.js'
 import RestroMenu from './components/RestroMenu.js'
 
+///chunking
+//code splitting
+//dynamic bundling
 
 const AppContainer=()=>{
   return (

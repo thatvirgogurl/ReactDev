@@ -15,19 +15,14 @@ render(){
       <div>
         <h1>AboutUs</h1>
         <h2>its a food oredering App</h2>
-        {/* <User name={"abhipsha"} /> */}
+     
         <UserClass
           name={"monalis a classbased"}
           location={"BBSR,Odisha"}
           pinCode={755007}
           Contact={"mishraMonalisa9@gamil.com"}
         />
-        {/* <UserClass
-          name={"Elon Musk a classbased"}
-          location={"india bahare"}
-          pinCode={755007}
-          Contact={"mishraMonalisa9@gamil.com"}
-        /> */}
+  
       </div>
     );
 }

@@ -3,12 +3,9 @@ import RestaurantCard from './RestaurantCard'
 import { useEffect, useState } from 'react';
 import Shimmer from './Shimmer';
 import {Link} from 'react-router-dom'
-// useState use only inside componnet //it is use for creating local state variavle inside componnet
-//useState use in top of the componnet for better practice
-//never crate useState inside any conditional statement//this can create inconsistancy in your program
+import useOnlineStatus from '../utils/useOnlineStatus';
+
 const Body = () => {
-//when state variable updated,react triggers a reconcillation cycle (re-resnders the componnets)
-//when yoou type in searchbar for each and every letter react rerender component
   const [listOfRestaurants, setListOfRestro] = useState([]);
 const[searchText,setSearchText]=useState("")
 const [filetredRestro,setFiltetrRestro] = useState([]);
@@ -19,15 +16,15 @@ const fetchData = async () => {
   );
   const jsonData = await data.json();
   console.log(
-    jsonData.data.cards[2].card.card.gridElements.infoWithStyle.restaurants
+    jsonData.data.cards[1].card.card.gridElements.infoWithStyle.restaurants
   );
   //use Optional Chainning
   
   setListOfRestro(
-    jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants
   );
   setFiltetrRestro(
-    jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+    jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
       ?.restaurants
   );
 
@@ -35,12 +32,13 @@ const fetchData = async () => {
 useEffect(() => {
   fetchData();
 }, []);
-//conditional Rendering
-// if(listOfRestaurants.length===0){
-//   return <Shimmer/>
-// }
+const onlineStatus = useOnlineStatus();
+if (onlineStatus === false) {
+  return (
+    <h1>Looks like you're offline!! Please turn on your internet</h1>
+  );
+}
 
-//using terminaryOperater
 return listOfRestaurants.length === 0 ? (
   <Shimmer></Shimmer>
 ) : (

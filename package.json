@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/thatvirgogurl/ReactDev#readme",
   "devDependencies": {
+    "@parcel/transformer-typescript-types": "^2.10.3",
     "parcel": "^2.10.3",
     "process": "^0.11.10"
   },
